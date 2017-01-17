@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AppliCar v0.2</string>
+
+    <string name="feedbacktype1">Choisissez dans la liste :</string>
+    <string name="feedbacktype2">Entretien</string>
+    <string name="feedbacktype3">Changement de pneus</string>
+    <string name="feedbacktype4">Autre</string>
+
+    <string name="moment1">Journée</string>
+    <string name="moment2">AM</string>
+    <string name="moment3">PM</string>
+
+
+    <string name="TextView1">Demande d\'intervention d\'un chauffeur-logisticien</string>
+    <string name="TextView2">Plaque :</string>
+    <string name="TextView3">Adresse où se trouve le véhicule</string>
+    <string name="TextView4">Dates :</string>
+    <string name="TextView5">Type d\'intervention :</string>
+    <string name="TextView6">Remarques :</string>
+    <string name="Button1">ENVOYER</string>
+
+    <string name="CheckBox1">Véhicule au domicile</string>
+    <string name="CheckBox2">Double au centre</string>
+
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+
+
+
+</resources>
+

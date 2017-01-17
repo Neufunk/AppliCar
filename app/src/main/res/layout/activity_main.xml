@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.asdnamur.applicar.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/TextView1"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Small.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titre"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/plaque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/progressBar"
+                android:text="@string/TextView2"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/plaqueEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plaque"
+                android:ems="10"
+                android:hint="1-"
+                android:inputType="textPersonName" />
+
+            <CheckBox
+                android:id="@+id/CheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plaqueEdit"
+                android:layout_marginTop="20dp"
+                android:checked="true"
+                android:text="@string/CheckBox1" />
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/CheckBox1"
+                android:enabled="false"
+                android:text="@string/TextView3"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/adressEdit"
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/adresse"
+                android:layout_marginTop="-5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                tools:text="Adresse" />
+
+            <TextView
+                android:id="@+id/dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/adressEdit"
+                android:layout_marginTop="15dp"
+                android:text="@string/TextView4"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/date_edit_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/dates"
+                android:ems="10"
+                android:inputType="datetime"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/date_edit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/date_edit_1"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:inputType="datetime" />
+
+            <EditText
+                android:id="@+id/date_edit_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/date_edit_2"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:inputType="datetime" />
+
+            <TextView
+                android:id="@+id/probleme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/date_edit_3"
+                android:layout_marginTop="20dp"
+                android:text="@string/TextView5"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <CheckBox
+                android:text="@string/CheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="390dp"
+                android:id="@+id/checkBox2" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/probleme"
+                android:entries="@array/feedbacktypelist" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="20dp"
+                android:text="@string/TextView6"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/remarque_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:ems="10"
+                android:inputType="textLongMessage" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/remarque_edit"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/boutton"
+                android:textColor="@color/White"
+                android:text="@string/Button1" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/date_edit_3"
+                android:layout_toEndOf="@+id/date_edit_2"
+                android:entries="@array/moment" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/date_edit_2"
+                android:layout_toEndOf="@+id/date_edit_1"
+                android:entries="@array/moment" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/date_edit_3"
+                android:layout_toEndOf="@+id/date_edit_3"
+                android:entries="@array/moment" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="feedbacktypelist">
+        <item>@string/feedbacktype1</item>
+        <item>@string/feedbacktype2</item>
+        <item>@string/feedbacktype3</item>
+        <item>@string/feedbacktype4</item>
+    </string-array>
+
+    <string-array name="moment">
+        <item>@string/moment1</item>
+        <item>@string/moment2</item>
+        <item>@string/moment3</item>
+
+    </string-array>
+
+</resources>
