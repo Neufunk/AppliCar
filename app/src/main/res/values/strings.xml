@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppliCar v0.2</string>
+    <string name="app_name">AppliCar v0.3</string>
 
     <string name="feedbacktype1">Choisissez dans la liste :</string>
     <string name="feedbacktype2">Entretien</string>
